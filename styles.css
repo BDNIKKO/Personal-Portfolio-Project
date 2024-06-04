@@ -1,3 +1,4 @@
+
 body {
     font-family: "Jersey 15 Charted", sans-serif;
     color: #333;
@@ -6,7 +7,7 @@ body {
     background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     background-size: cover;
     background-position: center;
-}   
+}
 
 .container {
     width: 80%;
@@ -16,11 +17,15 @@ body {
 }
 
 header {
-    background:  #00736d;
+    background: #00736d;
     color: #fff;
-    padding-top: 30px;
+    padding: 15px 0;
     min-height: 70px;
     border-bottom: #434446 5px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header a {
@@ -33,20 +38,26 @@ header a {
 header ul {
     padding: 0;
     list-style: none;
+    display: flex;
+    gap: 20px; 
 }
 
 header li {
-    display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 10px;
 }
 
 header #branding {
     float: left;
+    margin-right: auto;
 }
 
 header .current a {
     color: #77aaff;
     font-weight: bold;
+}
+
+h1 {
+    font-family: 'JetBrains Mono', monospace;
 }
 
 #about, #projects, #interests {
@@ -59,6 +70,9 @@ section img {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -69,44 +83,132 @@ footer {
     margin-top: 20px;
 }
 
-@media(max-width: 768px) {
-    header #branding, header nav, header nav li {
-        float: none;
-        text-align: center;
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact {
+    margin-top: 20px;
+}
+
+#contact h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5em;
+}
+
+#contact a {
+    color: #77aaff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
         width: 100%;
+        align-items: center;
+    }
+
+    header li {
+        padding: 10px 0;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    #contact h2 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    #about-me, #projects, #interests {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header li {
+        padding: 8px 0;
+    }
+
+    #about-me, #projects, #interests {
+        padding: 10px;
+        font-size: large;
+    }
+
+    #contact h2 {
+        font-size: 1em;
     }
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
 }
+
 #about-me {
     background: rgba(211, 198, 198, 0.812); 
     padding: 50px;
     margin: 20px 0;
-    border:  solid #333; 
+    border: solid #333; 
     box-shadow: 0 0 500px rgba(0, 0, 0, 0.1); 
-    font-size: larger;
-    
+    font-family: "Jersey 15 Charted", monospace;
+    color: #333;
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 #projects {
     background: rgba(211, 198, 198, 0.812); 
     padding: 50px;
     margin: 20px 0;
-    border:  solid #333; 
+    border: solid #333; 
     box-shadow: 0 0 500px rgba(0, 0, 0, 0.1); 
-    font-size: larger;
+    font-family: "Jersey 15 Charted", monospace;
+    color: #333;
+    font-size: x-large;
+    font-weight: bolder;
 }
 
 #interests {
     background: rgba(211, 198, 198, 0.812); 
     padding: 50px;
     margin: 20px 0;
-    border:  solid #333; 
+    border: solid #333; 
     box-shadow: 0 0 500px rgba(0, 0, 0, 0.1); 
-    font-size: la
-    
+    font-family: "Jersey 15 Charted", monospace;
+    color: #333;
+    font-size: x-large;
+    font-weight: bolder;
 }
