@@ -1,10 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Jersey 15 Charted", sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+}   
 
 .container {
     width: 80%;
@@ -14,7 +16,7 @@ body {
 }
 
 header {
-    background: #046b7e;
+    background:  #00736d;
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
@@ -60,7 +62,7 @@ section img {
 }
 
 footer {
-    background: #333;
+    background: #272625;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -80,4 +82,31 @@ footer {
     flex-direction: column;
     min-height: 100vh
 }
-   
+#about-me {
+    background: rgba(211, 198, 198, 0.812); 
+    padding: 50px;
+    margin: 20px 0;
+    border:  solid #333; 
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.1); 
+    font-size: larger;
+    
+}
+
+#projects {
+    background: rgba(211, 198, 198, 0.812); 
+    padding: 50px;
+    margin: 20px 0;
+    border:  solid #333; 
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.1); 
+    font-size: larger;
+}
+
+#interests {
+    background: rgba(211, 198, 198, 0.812); 
+    padding: 50px;
+    margin: 20px 0;
+    border:  solid #333; 
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.1); 
+    font-size: la
+    
+}
