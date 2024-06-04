@@ -36,19 +36,19 @@ header a {
 }
 
 header ul {
-    padding: 0;
+    padding: ;
     list-style: none;
     display: flex;
     gap: 20px; 
 }
 
 header li {
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
 header #branding {
     float: left;
-    margin-right: auto;
+    margin-left: 20px;
 }
 
 header .current a {
